@@ -6,10 +6,10 @@ import cors from 'cors'
 import { passModel } from './models/passmodel.js'
 
 dotenv.config()
-await mongoose.connect(process.env.MONGOURL)
+await mongoose.connect("mongodb+srv://shahbazansari8998:aRfKENwql8bxbGH0@portfolio.u4rpgss.mongodb.net/contact")
 
 const app = express()
-const port = process.env.PORT || 5000
+const port = 3000
 
 app.use(bodyParser.json())
 app.use(cors())
